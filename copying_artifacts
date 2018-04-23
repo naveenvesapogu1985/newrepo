@@ -1,9 +1,0 @@
----
-- hosts: all
-  name: Trying to make automatic deployment.
-  tasks:
-    name: Copying artifacts to tomcat
-    -copy:
-      src:/root/.jenkins/workspace/jo/build/*.war
-      dest:/opt/tomcat/webapps/
-      become: root
